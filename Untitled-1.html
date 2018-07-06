@@ -21,7 +21,7 @@
     }
 
     #REFo{
-        height: 410px;
+        height: 420px;
         width: 400px;
         background-color: #f4f4f4;
         margin-top: 30px;
@@ -66,7 +66,7 @@
     }
     #panel1
     {
-        height: 200px;
+        height: 220px;
         width: 250px;
         background-color: white;
         margin-top: 20px;
@@ -122,6 +122,16 @@
         margin-top: 20px;
 
         float: left;
+    }
+    #panel1>button
+    {
+        margin-top:10px;
+        margin-right: 5px;
+        float: right;
+    }
+    #panel1>p
+    {
+        float:left;
     }
     #reco
     {
@@ -186,9 +196,160 @@
 imput,select,textarea{
     border:1px solid #d4d4d4;
     border-radius: 4px;
-    
 }
 
+@media all and (max-width:720px)
+{
+#baner{
+        height: 70px;
+        width: 50%;
+        background-image: url(1.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        float: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.5;
+    }
+    #right>h1{
+        font-size:15px;
+        color: white;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    #REFo{
+        height: 230px;
+        width: 200px;
+        background-color: #f4f4f4;
+        margin-top: 10px;
+        margin-left: 30px;
+        box-shadow: 0 0 0 10px rgba(10, 10, 10, 0.11);
+        -webkit-box-shadow: 0 0 0 10px rgba(10, 10, 10, 0.11);
+        -moz-box-shadow :0 0 0 10px rgba(10, 10, 10, 0.11);
+    }
+    input[type="text"]
+    {
+        margin-top: 1px;
+        margin-bottom: 1px;
+        width:110px;
+        height: 20px;
+    }
+    #zdj{
+        width: 10px;
+        height: 10px;
+        margin-top: 1px;
+    }
+    p {
+     font-size: 10px;   
+}
+
+button{
+    margin-top: 1px;
+    height: 20px;
+    width: 90px;
+}
+
+#text
+{
+    width: 180px;
+    height: 90px;
+
+}
+#ch{
+margin-left: 1px;
+width: 10px;
+height: 10px;
+margin-top: 10px;
+margin-left:5px;
+}
+#right{
+    width: 48%;
+    margin-top: 1px;
+}
+#left{
+    width: 48%;
+}
+#left>h1{
+        font-size:15px;
+        color: white;
+        margin-left:10px;
+    }
+
+  #panel
+    {
+        height: 120px;
+        width: 200px;
+        background-color: white;
+        margin-top: 2px;
+        margin-left: 40px;
+        box-shadow: 0 0 0 10px rgba(10, 10, 10, 0.11);
+        -webkit-box-shadow: 0 0 0 10px rgba(10, 10, 10, 0.11);
+        -moz-box-shadow :0 0 0 10px rgba(10, 10, 10, 0.11);
+    }
+#panel1
+    {
+        height: 120px;
+        width: 200px;
+        background-color: white;
+        margin-top: 2px;
+        margin-left: 40px;
+        box-shadow: 0 0 0 10px rgba(10, 10, 10, 0.11);
+        -webkit-box-shadow: 0 0 0 10px rgba(10, 10, 10, 0.11);
+        -moz-box-shadow :0 0 0 10px rgba(10, 10, 10, 0.11);
+    }
+    #panel1>button{
+    height: 20px;
+    width: 90px;
+    float: right;
+    margin-right: 5px;
+}
+
+#reco
+    {
+        height: 120px;
+        width: 200px;
+        background-color: white;
+        margin-top: 2px;
+        margin-left: 40px;
+        box-shadow: 0 0 0 10px rgba(10, 10, 10, 0.11);
+        -webkit-box-shadow: 0 0 0 10px rgba(10, 10, 10, 0.11);
+        -moz-box-shadow :0 0 0 10px rgba(10, 10, 10, 0.11);
+    }
+    #reco>button{
+        height: 20px;
+    width: 80px;
+    float: inherit;
+    }
+    #panel>button{
+        height: 20px;
+    width: 80px;
+    float: inherit;
+    }
+    #panel>#but1
+    {
+        margin-top: 0px;
+    }
+    #but3{
+        margin-top:5px;
+    }
+
+#pane
+    {
+        height: 80px;
+        width: 250px;
+        background-image: url(21.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-top: 1px;
+        margin-right: 2px;
+        opacity: 0.5;
+    }
+
+
+#left{
+    margin-left: 0px;
+}
+}
 
     </style>
 </head>
@@ -225,7 +386,7 @@ imput,select,textarea{
                 </select>
                 </div>     
                 <input id="ch" type=checkbox>
-                        I have read and accept the terms of use
+                       <P> I have read and accept the terms of use</P>
         <button type="submit" value="Sign up">Sing up</button>
 
 </div>
@@ -243,8 +404,8 @@ imput,select,textarea{
                 <div>
                     <textarea id="text"></textarea>
                 </div>
-                <input id="zdj"  id="ch" type=checkbox>
-                        Send the copy to me email
+                <input  id="ch" type=checkbox>
+                      <p>  Send the copy to me email</p>
         <button type="submit" value="Send Email"> Send Email</button>
 </div>
 </div>
@@ -260,8 +421,7 @@ imput,select,textarea{
                     <input type="text" placeholder="Password">
                     </div>
                     <input id="ch" type=checkbox>
-                        <span></span>
-                        Remember me
+                        <p>Remember me</p>
             <button type="submit" value="Singn In">Singn In</button>
     </div>
     <h1>Recover Form</h1>
